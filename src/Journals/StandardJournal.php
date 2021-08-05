@@ -31,8 +31,6 @@ class StandardJournal implements Journal
      *
      * @param \Scientist\Experiment $experiment
      * @param \Scientist\Report     $report
-     *
-     * @return mixed
      */
     public function report(Experiment $experiment, Report $report)
     {

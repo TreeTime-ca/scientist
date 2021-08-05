@@ -1,5 +1,7 @@
 <?php
 
+namespace Matchers;
+
 use Scientist\Matchers\ClosureMatcher;
 
 class ClosureMatcherTest extends \PHPUnit\Framework\TestCase
@@ -7,7 +9,7 @@ class ClosureMatcherTest extends \PHPUnit\Framework\TestCase
     private function getClosure()
     {
         return function ($control, $trial) {
-            return strtoupper($control) == strtoupper($trial);
+            return strtoupper($control) === strtoupper($trial);
         };
     }
 

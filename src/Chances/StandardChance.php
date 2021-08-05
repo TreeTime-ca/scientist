@@ -10,7 +10,7 @@ class StandardChance implements Chance
      */
     public function shouldRun()
     {
-        if ($this->percentage == 0) {
+        if ($this->percentage === 0) {
             return false;
         }
 
@@ -34,7 +34,7 @@ class StandardChance implements Chance
     public function setPercentage($percentage)
     {
         $this->percentage = $percentage;
-        
+
         return $this;
     }
 }

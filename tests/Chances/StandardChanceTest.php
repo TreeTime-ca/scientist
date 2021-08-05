@@ -1,5 +1,8 @@
 <?php
-namespace Scientist\Chances;
+
+namespace Chances;
+
+use Scientist\Chances\StandardChance;
 
 class StandardChanceTest extends \PHPUnit\Framework\TestCase
 {
@@ -8,7 +11,7 @@ class StandardChanceTest extends \PHPUnit\Framework\TestCase
      */
     private $chance;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->chance = new StandardChance();
     }
@@ -26,7 +29,7 @@ class StandardChanceTest extends \PHPUnit\Framework\TestCase
 
     public function test_that_set_percentage_sets_the_percentage()
     {
-        $percentage = rand(1, 100);
+        $percentage = random_int(1, 100);
         $this->chance
             ->setPercentage($percentage);
         $this->assertEquals($percentage, $this->chance->getPercentage());
@@ -34,7 +37,7 @@ class StandardChanceTest extends \PHPUnit\Framework\TestCase
 
     public function test_that_set_percentage_returns_the_chance_object_for_chaining()
     {
-        $percentage = rand(1, 100);
+        $percentage = random_int(1, 100);
         $this->assertSame($this->chance, $this->chance->setPercentage($percentage));
     }
 }

@@ -1,5 +1,7 @@
 <?php
 
+namespace Matchers;
+
 use Scientist\Matchers\StandardMatcher;
 
 class StandardMatcherTest extends \PHPUnit\Framework\TestCase

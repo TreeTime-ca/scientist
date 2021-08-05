@@ -1,5 +1,7 @@
 <?php
 
+namespace Journals;
+
 use Scientist\Report;
 use Scientist\Laboratory;
 use Scientist\Experiment;
