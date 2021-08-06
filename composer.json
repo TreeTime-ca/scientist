@@ -23,5 +23,10 @@
         "psr-4": {
             "Scientist\\": "src"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Scientist\\Tests\\": "tests"
+        }
     }
 }
